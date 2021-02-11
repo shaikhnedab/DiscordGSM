@@ -77,12 +77,12 @@ class DiscordGSM():
 
     async def on_ready(self):
         # set username and avatar
-        icon_file_name = 'images/discordgsm' + ('DGSM_TOKEN' in os.environ and '-heroku' or '') + '.png'
-        with open(icon_file_name, 'rb') as file:
-            try:
-                await bot.user.edit(username='DiscordGSM', avatar=file.read())
-            except:
-                pass
+        #icon_file_name = 'images/discordgsm' + ('DGSM_TOKEN' in os.environ and '-heroku' or '') + '.png'
+        #with open(icon_file_name, 'rb') as file:
+        #    try:
+        #        await bot.user.edit(username='DiscordGSM', avatar=file.read())
+        #    except:
+        #        pass
 
         # print info to console
         print('\n----------------')
